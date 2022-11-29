@@ -1,19 +1,7 @@
 // bs5
-// @import "bootstrap/bootstrap"; 
 
-// 全域變數&mixin
-@import"variable";
-@import "mixin";
+@import"bootstrap";
 
+// 自尻css********************************************************
 
-// 通用元件
-@import "base";
-@import "module";
-
-// 共同框架
-
-@import "bootstrap-grid";
-@import "layout";
-
-
-@import "main";
+// layout
