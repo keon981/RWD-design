@@ -51,6 +51,7 @@ $ivory:   #b5a693; //象牙色v
 $celadon: #b9c6b0; //青瓷綠色*
 $olive:   #baba95; //橄欖綠色*
 $horizon: #d4e0c6; //蒼色
+$dark: #435856;//深綠色
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -86,7 +87,7 @@ $info:              $olive !default;
 $warning:           $yellow !default;
 $danger:            $red !default;
 $light:             $gray-200 !default;
-$dark:              $gray-900 !default;
+$dark:              $dark !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
