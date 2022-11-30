@@ -65,13 +65,20 @@
 
     <section>
         <div class="container">
-            <div class="card-items">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+            <div class="card-items row px-3 mt-4">
+                <div class="card p-0 mb-3">
+                    <picture>
+                        <source srcset="images/card/card-1-720.png" media="(min-width: 992px)">
+                        <source srcset="images/card/card-1-480.png" media="(min-width: 576px)">
+                        <img src="images/card/card-1-320.png" class="card-img-top" alt="...">
+                    </picture>
                     <div class="card-body">
+                        <h5 class="card-title h6 fw-bold text-primary">Secondary card title</h5>
                         <p class="card-text">How to Find Happiness in Your Life</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
+
             </div>
         </div>
 

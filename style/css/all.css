@@ -10712,8 +10712,16 @@ textarea.form-control-lg {
   }
 }
 .wrap {
-  height: 100vh;
-  background-image: url("../../images/jess-bailey-UHqfUTDmdC4-unsplash.jpg");
+  height: 80vh;
+  background-image: url("../../images/icons9-team.png");
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 576px) {
+  .wrap {
+    height: 100vh;
+    background-image: url("../../images/jess-bailey-UHqfUTDmdC4-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 }/*# sourceMappingURL=all.css.map */

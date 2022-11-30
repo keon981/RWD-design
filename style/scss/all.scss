@@ -6,8 +6,14 @@
 // layout
 // main
 .wrap{
-    height: 100vh;
-    background-image: url("../../images/jess-bailey-UHqfUTDmdC4-unsplash.jpg");
+    height: 80vh;
+    background-image: url("../../images/icons9-team.png");
     background-size: cover;
     background-position: center;
+    @include media-breakpoint-up(sm) { 
+        height: 100vh;
+        background-image: url("../../images/jess-bailey-UHqfUTDmdC4-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 }
