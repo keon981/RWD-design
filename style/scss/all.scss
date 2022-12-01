@@ -22,6 +22,14 @@
     img{
         height: 100%;
     }
+    &.meet-pic{
+        width: 96px;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 // main----------------------------------------------
@@ -41,15 +49,3 @@
     }
 }
 
-.card-body{
-    ul{
-        .pic{
-            width: 96px;
-            height: 96px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    
-}
