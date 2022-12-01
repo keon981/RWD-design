@@ -3,8 +3,8 @@
 @import"bootstrap";
 
 // 自尻css********************************************************
-// layout
-// main
+// layout----------------------------------------------
+
 .wrap{
     height: 80vh;
     background-image: url("../../images/icons9-team.png");
@@ -16,4 +16,40 @@
         background-size: cover;
         background-position: center;
     }
+}
+// modle-----------------------------------------------
+.pic{
+    img{
+        height: 100%;
+    }
+}
+
+// main----------------------------------------------
+.news-cards{
+    overflow-x: hidden;
+    .card{
+        // width: 30%;
+        flex: 1 0 0 ;
+        margin-right: 1.5rem;
+        @include media-breakpoint-up(sm) { 
+            flex: 0 0 48% ;
+        }
+        
+        @include media-breakpoint-up(xxl) { 
+            flex: 0 0 30%;
+        }
+    }
+}
+
+.card-body{
+    ul{
+        .pic{
+            width: 96px;
+            height: 96px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
 }
