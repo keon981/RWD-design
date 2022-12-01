@@ -12165,6 +12165,13 @@ textarea.form-control-lg {
 .pic img {
   height: 100%;
 }
+.pic.meet-pic {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .news-cards {
   overflow-x: hidden;
@@ -12182,12 +12189,4 @@ textarea.form-control-lg {
   .news-cards .card {
     flex: 0 0 30%;
   }
-}
-
-.card-body ul .pic {
-  width: 96px;
-  height: 96px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=all.css.map */
