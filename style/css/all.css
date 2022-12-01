@@ -12162,15 +12162,9 @@ textarea.form-control-lg {
   }
 }
 
-.pic img {
-  height: 100%;
-}
-.pic.meet-pic {
+.pic {
   width: 96px;
   height: 96px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .news-cards {
