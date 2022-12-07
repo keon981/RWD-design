@@ -149,6 +149,7 @@ $utilities: map-merge(
     // Sizing utilities
     // scss-docs-start utils-sizing
     "width": (
+      responsive: true,
       property: width,
       class: w,
       values: (
@@ -160,21 +161,25 @@ $utilities: map-merge(
       )
     ),
     "max-width": (
+      responsive: true,
       property: max-width,
       class: mw,
       values: (100: 100%)
     ),
     "viewport-width": (
+      responsive: true,
       property: width,
       class: vw,
       values: (100: 100vw)
     ),
     "min-viewport-width": (
+      responsive: true,
       property: min-width,
       class: min-vw,
       values: (100: 100vw)
     ),
     "height": (
+      responsive: true,
       property: height,
       class: h,
       values: (
@@ -186,16 +191,19 @@ $utilities: map-merge(
       )
     ),
     "max-height": (
+      responsive: true,
       property: max-height,
       class: mh,
       values: (100: 100%)
     ),
     "viewport-height": (
       property: height,
+      responsive: true,
       class: vh,
       values: (100: 100vh)
     ),
     "min-viewport-height": (
+      responsive: true,
       property: min-height,
       class: min-vh,
       values: (100: 100vh)
@@ -590,6 +598,7 @@ $utilities: map-merge(
         1: $border-radius-sm,
         2: $border-radius,
         3: $border-radius-lg,
+        4: $border-radius-xl,
         circle: 50%,
         pill: $border-radius-pill
       )
@@ -597,22 +606,58 @@ $utilities: map-merge(
     "rounded-top": (
       property: border-top-left-radius border-top-right-radius,
       class: rounded-top,
-      values: (null: $border-radius)
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        4: $border-radius-xl,
+        circle: 50%,
+        pill: $border-radius-pill
+      )
     ),
     "rounded-end": (
       property: border-top-right-radius border-bottom-right-radius,
       class: rounded-end,
-      values: (null: $border-radius)
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        4: $border-radius-xl,
+        circle: 50%,
+        pill: $border-radius-pill
+      )
     ),
     "rounded-bottom": (
       property: border-bottom-right-radius border-bottom-left-radius,
       class: rounded-bottom,
-      values: (null: $border-radius)
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        4: $border-radius-xl,
+        circle: 50%,
+        pill: $border-radius-pill
+      )
     ),
     "rounded-start": (
       property: border-bottom-left-radius border-top-left-radius,
       class: rounded-start,
-      values: (null: $border-radius)
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        4: $border-radius-xl,
+        circle: 50%,
+        pill: $border-radius-pill
+      )
     ),
     // scss-docs-end utils-border-radius
     // scss-docs-start utils-visibility
