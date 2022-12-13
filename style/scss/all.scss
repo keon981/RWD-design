@@ -38,13 +38,11 @@
 
 
 
-.essay-cards {
-    overflow-x: hidden;
-
+.slider {
     .card {
-        // width: 30%;
         flex: 1 0 0;
-        margin-right: 1.5rem;
+        // max-width: 210px;
+        margin: .5rem;
 
         @include media-breakpoint-up(sm) {
             flex: 0 0 48%;
