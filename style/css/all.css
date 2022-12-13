@@ -12407,6 +12407,14 @@ textarea.form-control-lg {
   height: 96px;
 }
 
+.bg-hover {
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.bg-hover:hover {
+  background-color: #eef1eb;
+}
+
 .essay-cards {
   overflow-x: hidden;
 }
