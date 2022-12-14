@@ -2,17 +2,20 @@
 
 @import"bootstrap";
 
+// slick.js
+@import "slick";
+@import "slick-theme";
+
 // 自尻css********************************************************
 // layout----------------------------------------------
 
 .wrap {
-    height: 80vh;
+    height: 100%;
     background-image: url("../../images/icons9-team.png");
     background-size: cover;
     background-position: center;
 
     @include media-breakpoint-up(sm) {
-        height: 100vh;
         background-image: url("../../images/jess-bailey-UHqfUTDmdC4-unsplash.jpg");
         background-size: cover;
         background-position: center;
@@ -39,17 +42,11 @@
 
 
 .slider {
-    .card {
-        flex: 1 0 0;
-        // max-width: 210px;
-        margin: .5rem;
-
-        @include media-breakpoint-up(sm) {
-            flex: 0 0 48%;
-        }
-
-        @include media-breakpoint-up(xxl) {
-            flex: 0 0 30%;
+    li{
+        flex: 1 0 0%;
+        .card {
+            // margin: .5rem;
+            height: 100%;
         }
     }
 }
