@@ -13068,12 +13068,37 @@ textarea.form-control-lg {
   height: 96px;
 }
 
-.bg-hover {
+.s-hover {
   transition: all 0.25s;
   cursor: pointer;
 }
-.bg-hover:hover {
-  background-color: #eef1eb;
+.s-hover:hover {
+  background-color: #eddec5;
+}
+
+.p-hover-light {
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.p-hover-light:hover {
+  background-color: #ebf9e2;
+}
+
+.p-hover {
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.p-hover:hover {
+  background-color: #b9c6b0;
+}
+
+.text-hover {
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.text-hover:hover {
+  color: #b9c6b0;
+  font-weight: bold;
 }
 
 .slider li {

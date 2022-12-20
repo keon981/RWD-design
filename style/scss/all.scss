@@ -28,12 +28,37 @@
     height: 96px;
 }
 
-.bg-hover {
+.s-hover {
     transition: all .25s;
     cursor: pointer;
 
     &:hover {
-        background-color: lighten($primary, 20%);
+        background-color: $secondary;
+    }
+}
+.p-hover-light{
+    transition: all .25s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $p-light;
+    }
+}
+.p-hover{
+    transition: all .25s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary;
+    }
+}
+.text-hover{
+    transition: all .25s;
+    cursor: pointer;
+
+    &:hover {
+        color: $primary;
+        font-weight: bold;
     }
 }
 
