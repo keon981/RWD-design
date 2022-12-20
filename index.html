@@ -6,23 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RWD design</title>
-    <link rel="stylesheet" href="style/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="style/css/webfonts.min.css">
     <link rel="stylesheet" href="style/css/all.css">
 </head>
 
 <body>
     <!-- header-------------------------------------------------- -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-primary-variant px-3">
+        <nav class="navbar navbar-expand-md navbar-light bg-primary px-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">DailyPsych</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <h1>
+                    <a class="navbar-brand text-success fst-italic fw-bolder" href="#"><svg style="width: 32px;height:100%;" viewBox="0 0 16 16" ><g fill="currentColor"><path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083L6.757 8.43A.5.5 0 0 1 6 8V1z"/><path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/><path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/></g></svg>  OnlineNotes</a>
+                </h1>
+                <button class="navbar-toggler fst-italic text-s-dark" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="d-none d-sm-inline">menu </span>
+                    <span class="d-none d-sm-inline">MENU </span>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-music-note-list" viewBox="0 0 16 16">
+                            class="bi bi-music-note-list text-info" viewBox="0 0 16 16">
                             <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
                             <path fill-rule="evenodd" d="M12 3v10h-1V3h1z" />
                             <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z" />
@@ -33,7 +36,7 @@
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-0">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Self-Improvement</a>
                         </li>
@@ -53,9 +56,9 @@
     </header>
 
     <!-- wrapper ------------------------------ -->
-    <section class="wrap d-flex justify-content-center align-items-center vh-100">
+    <section class="wrap d-flex justify-content-center align-items-center  vh-75">
         <div class="container d-flex flex-column align-items-center">
-            <h2 class="text-secondary-variant">Start Learning About Yourself Today.</h2>
+            <h2 class="text-p-dark fst-italic fw-bolder">因為會忘，所以要寫下來</h2>
             <div class="input-group py-4 px-4">
                 <input type="text" class="form-control rounded-4 py-3" placeholder="Search Topics..."
                     aria-label="Search Topics..." aria-describedby="button-addon2" />
@@ -72,7 +75,7 @@
             <!-- HAPPINESS---------------------------------------------------------- -->
             <article class="col-12 col-lg-8 mb-5 mb-xl-0">
                 <!-- article..................................... -->
-                <div class="card shadow p-0 mb-5">
+                <div class="card shadow s-hover p-0 mb-5">
                     <picture>
                         <source srcset="images/card/card-1-720.png" media="(min-width: 992px)">
                         <source srcset="images/card/card-1-480.png" media="(min-width: 576px)">
@@ -86,7 +89,7 @@
                 </div>
 
                 <!-- 心得評價----------------------------------- -->
-                <div class="card bg-primary-variant p-4 mb-5">
+                <div class="card bg-secondary p-4 mb-5">
                     <h4 class="card-title h4 fw-bold text-dark">How Do You Feel Today?</h4>
                     <p class="card-text">We’ll recommend you relevant articels that match to your mood!</p>
                     <div class="row">
@@ -96,108 +99,136 @@
                             <a href="#" class="d-block"><img src="images/icons/sad.svg" alt=""></a>
                         </div>
                         <div class="col-12 col-sm-6 text-center mt-3 mt-sm-0">
-                            <button class="btn btn-primary text-center align-middle h3 text-dark fw-bold rounded w-50 w-sm-100 h-100">Check it Out!</button>
+                            <button
+                                class="btn btn-s-dark text-white text-center align-middle h3 text-dark fw-bold rounded w-50 w-sm-100 h-100">Check
+                                it Out!</button>
                         </div>
                     </div>
                 </div>
 
 
-                <!-- news-cards --------------------------------------------------------------- -->
-                <div class="essay-cards d-flex ">
-                    <div class="card shadow p-0 m-auto" style="max-width:360px">
-                        <img src="images/phone.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title h6 fw-bold text-primary">NEWS</h5>
-                            <p class="card-text">The Growing Burden of ‘Reply ASAP’ Culture</p>
-                            <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                <!-- noteCards-items --------------------------------------------------------------- -->
+                <ul class="slider p-0">
+                    <li class="col p-2">
+                        <div class="card shadow">
+                            <img src="images/notion.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-primary">Notion</h5>
+                                <p class="card-text">提供記事、資料庫、項目管理、日曆等多種整合功能，具有高度靈活性，且可以依據個人整理習慣不同，整理成不同的版面、切換成不同的瀏覽模式。</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card shadow p-0 m-auto" style="max-width:360px">
-                        <img src="images/phone.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title h6 fw-bold text-primary">NEWS</h5>
-                            <p class="card-text">The Growing Burden of ‘Reply ASAP’ Culture</p>
-                            <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                    </li>
+                    <li class="col p-2">
+                        <div class="card shadow">
+                            <img src="images/evernote_icon.png" class="card-img-top" alt="...">
+                            <div class="card-body mb-auto">
+                                <h5 class="card-title fw-bold text-primary">Evernote</h5>
+                                <p class="card-text">提供相當完善的筆記本功能，可整合標籤、便箋功能功能，讓看似複雜的工作流程以簡單明瞭的方式呈現。</p>
+                               
+                            </div>
                         </div>
-                    </div>
-                    <div class="card shadow p-0 m-auto" style="max-width:360px">
-                        <img src="images/phone.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title h6 fw-bold text-primary">NEWS</h5>
-                            <p class="card-text">The Growing Burden of ‘Reply ASAP’ Culture</p>
-                            <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                    </li>
+                    <li class="col p-2">
+                        <div class="card shadow">
+                            <img src="images/Google-Keep.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-primary">Google Keep</h5>
+                                <p class="card-text">主打使用直覺、操作簡易，且可與Google旗下其他產品整合。可以把Google Keep想像成數位便箋，如同黏在桌子上的便條紙一樣，可以套用不同的顏色和標籤做分類。</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
+                    </li>
+                    <!-- 4~5 -->
+                    <li class="col p-2">
+                        <div class="card shadow">
+                            <img src="images/Trello.gif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-primary">Trello</h5>
+                                <p class="card-text">由「Board 」看板與「 List 」清單組成，打破時間軸方式排列可自由組合拖移，專案管理、時程規劃、生活管理等範疇時常用的還有這款 Trello。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col p-2">
+                        <div class="card shadow">
+                            <img src="images/onenote.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-primary">Microsoft Onenote</h5>
+                                <p class="card-text">由微軟推出的一套筆記軟體，像是一本編排精美的書冊，OneNote的電腦版提供子頁面的功能，製作兩層、三層甚至是更多層級的樹狀架構，也可以製作章節分類與群組，讓整個記事本更加系統化與架構化。</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </article>
+
 
             <!-- 側邊攔 -->
             <aside class="col-12 col-lg-4">
 
-                <!-- Popular Articles -->
+                <!-- 設計快報 -->
                 <ul class="list-group shadow rounded-4 p-3">
-                    <li class="list-group-item border-0 ">
-                        <h4 class="text-dark fw-bold align-middle m-0">Popular Articles</h4>
+                    <li class="list-group-item list-hover border-0 ">
+                        <h4 class="text-dark fw-bold align-middle m-0">設計快報</h4>
                     </li>
-                    <li class="list-group-item border-0 py-2">
-                        <a href="#" class="d-block text-decoration-none text-dark">
+                    <li class="list-group-item s-hover border-0 py-2">
+                        <a href="https://technews.tw/2022/12/02/openai-chatgpt/" class="d-block text-decoration-none text-dark"  target="_blank">
                             <div class="d-flex">
-                                <img src="https://picsum.photos/72/72?random=2" class="img-fluid rounded-1" alt="...">
-                                <h5 class="my-auto ps-4">The Benefits of Yoga For Sleep</h5>
+                                <img src="https://img.technews.tw/wp-content/uploads/2022/12/02162805/%E6%88%AA%E5%9C%96-2022-12-02-%E4%B8%8B%E5%8D%884.27.31-624x484.png" class="img-fluid rounded-1" alt="..." style="height: 75px;width: 75px;">
+                                <h5 class="my-auto ps-4">驚豔全球的聊天機器人「ChatGPT」</h5>
                             </div>
 
                         </a>
                     </li>
-                    <li class="list-group-item border-0 py-2">
-                        <a href="#" class="d-block text-decoration-none text-dark">
+                    <li class="list-group-item s-hover border-0 py-2">
+                        <a href="https://www.shoppingdesign.com.tw/post/view/8483?" class="d-block text-decoration-none text-dark"  target="_blank">
                             <div class="d-flex">
-                                <img src="https://picsum.photos/72/72?random=9" class="img-fluid rounded-1" alt="...">
-                                <h5 class="my-auto ps-4">The Benefits of Yoga For Sleep</h5>
+                                <img src="https://bnextmedia.s3.hicloud.net.tw/image/album/2022-12/img-1669946692-24869.jpg" class="img-fluid rounded-1" alt="..." style="height: 75px;width: 75px;">
+                                <h5 class="my-auto ps-4">用Pantone 2023年度代表色為設計超前部署！</h5>
                             </div>
 
                         </a>
                     </li>
-                    <li class="list-group-item border-0 py-2">
-                        <a href="#" class="d-block text-decoration-none text-dark">
+                    <li class="list-group-item s-hover border-0 py-2">
+                        <a href="#" class="d-block text-decoration-none text-dark"  target="_blank">
                             <div class="d-flex">
-                                <img src="https://picsum.photos/72/72?random=8" class="img-fluid rounded-1" alt="...">
-                                <h5 class="my-auto ps-4">The Benefits of Yoga For Sleep</h5>
+                                <img src="https://imarketing.iwant-in.net/wp-content/uploads/2022/06/2022_04_11_P1_123RF.bmp" class="img-fluid rounded-1" alt="..." style="height: 75px;width: 75px;">
+                                <h5 class="my-auto ps-4">
+                                    Instagram 推出NFT 交易</h5>
                             </div>
 
                         </a>
                     </li>
-                    <li class="list-group-item border-0 py-2">
-                        <a href="#" class="d-block text-decoration-none text-dark">
+                    <li class="list-group-item s-hover border-0 py-2">
+                        <a href="https://event.culture.tw/NTMOFA/portal/Registration/C0103MAction?actId=20175" class="d-block text-decoration-none text-dark"  target="_blank">
                             <div class="d-flex">
-                                <img src="https://picsum.photos/72/72?random=4" class="img-fluid rounded-1" alt="...">
-                                <h5 class="my-auto ps-4">The Benefits of Yoga For Sleep</h5>
+                                <img src="https://event.culture.tw/userFiles/NTMOFA/JpgFile/01/20175/20175_276_175.jpg?20221214" class="img-fluid rounded-1" alt="..." style="height: 75px;width: 75px;">
+                                <h5 class="my-auto ps-4">2023台灣國際光影藝術節</h5>
                             </div>
 
                         </a>
                     </li>
-                    <li class="list-group-item border-0 py-2">
-                        <a href="#" class="d-block text-decoration-none text-dark">
+                    <li class="list-group-item s-hover border-0 py-2">
+                        <a href="#" class="d-block text-decoration-none text-dark"  target="_blank">
                             <div class="d-flex">
-                                <img src="https://picsum.photos/72/72?random=3" class="img-fluid rounded-1" alt="...">
-                                <h5 class="my-auto ps-4">The Benefits of Yoga For Sleep</h5>
+                                <img src="https://bnextmedia.s3.hicloud.net.tw/image/album/2022-10/img-1666848847-98218.jpg" class="img-fluid rounded-1" alt="..." style="height: 75px;width: 75px;">
+                                <h5 class="my-auto ps-4">「金門大橋」開通！以線條堆疊、向上箭頭象徵金門和烈嶼的連結</h5>
                             </div>
 
                         </a>
                     </li>
-                    <li class="list-group-item border-0 text-end"><a href="#"
-                            class=" text-decoration-none text-dark">see more <i class="fa-solid fa-circle-arrow-right"></i></a></li>
+                    <li class="list-group-item border-0 text-end">
+                        <a href="https://www.instagram.com/p/Ck8Tk_YBP5P/" class=" text-decoration-none text-dark text-hover" target="_blank">資料來源 <i class="fa-solid fa-circle-arrow-right"></i>
+                        </a>
+                    </li>
                 </ul>
 
 
 
                 <!-- Find a Topic -->
-                <ul class="list-group bg-primary-variant shadow rounded-4 p-3 mt-5 mt-lg-5">
+                <ul class="list-group bg-p-light shadow rounded-4 p-3 mt-5 mt-lg-5">
                     <li class="list-group-item border-0 bg-transparent">
                         <h4 class="text-dark fw-bold align-middle m-0">Popular Articles</h4>
                     </li>
                     <li class="list-group-item border-0 bg-transparent py-2">
-                        <a href="#" class="d-block text-decoration-none text-dark">
+                        <a href="#" class="d-block text-decoration-none text-dark p-hover">
                             <div class="d-flex">
                                 <img src="https://picsum.photos/72/72?random=2" class="img-fluid rounded-1" alt="...">
                                 <h5 class="my-auto ps-4">The Benefits of Yoga For Sleep</h5>
@@ -206,7 +237,7 @@
                         </a>
                     </li>
                     <li class="list-group-item border-0 bg-transparent py-2">
-                        <a href="#" class="d-block text-decoration-none text-dark">
+                        <a href="#" class="d-block text-decoration-none text-dark p-hover">
                             <div class="d-flex">
                                 <img src="https://picsum.photos/72/72?random=9" class="img-fluid rounded-1" alt="...">
                                 <h5 class="my-auto ps-4">The Benefits of Yoga For Sleep</h5>
@@ -215,7 +246,7 @@
                         </a>
                     </li>
                     <li class="list-group-item border-0 bg-transparent py-2">
-                        <a href="#" class="d-block text-decoration-none text-dark">
+                        <a href="#" class="d-block text-decoration-none text-dark p-hover">
                             <div class="d-flex">
                                 <img src="https://picsum.photos/72/72?random=8" class="img-fluid rounded-1" alt="...">
                                 <h5 class="my-auto ps-4">The Benefits of Yoga For Sleep</h5>
@@ -224,7 +255,7 @@
                         </a>
                     </li>
                     <li class="list-group-item border-0 bg-transparent py-2">
-                        <a href="#" class="d-block text-decoration-none text-dark">
+                        <a href="#" class="d-block text-decoration-none text-dark p-hover">
                             <div class="d-flex">
                                 <img src="https://picsum.photos/72/72?random=4" class="img-fluid rounded-1" alt="...">
                                 <h5 class="my-auto ps-4">The Benefits of Yoga For Sleep</h5>
@@ -233,7 +264,7 @@
                         </a>
                     </li>
                     <li class="list-group-item border-0 bg-transparent py-2">
-                        <a href="#" class="d-block text-decoration-none text-dark">
+                        <a href="#" class="d-block text-decoration-none text-dark p-hover">
                             <div class="d-flex">
                                 <img src="https://picsum.photos/72/72?random=3" class="img-fluid rounded-1" alt="...">
                                 <h5 class="my-auto ps-4">The Benefits of Yoga For Sleep</h5>
@@ -242,7 +273,7 @@
                         </a>
                     </li>
                     <li class="list-group-item border-0 bg-transparent py-2">
-                        <a href="#" class="d-block text-decoration-none text-dark">
+                        <a href="#" class="d-block text-decoration-none text-dark p-hover">
                             <div class="d-flex">
                                 <img src="https://picsum.photos/72/72?random=3" class="img-fluid rounded-1" alt="...">
                                 <h5 class="my-auto ps-4">The Benefits of Yoga For Sleep</h5>
@@ -260,41 +291,33 @@
         <!-- 第1欄end*************************************************   -->
 
 
-
-
         <!-- 第2欄*************************************************   -->
         <main class="row">
             <!-- 2-1********************************************** -->
             <menu class="col-12 col-lg-4 ">
                 <h4 class="text-primary fw-bolder mb-lg-4">Try Self-Test</h4>
                 <ul class="list-group shadow">
-                    <li class="list-group-item d-flex justify-content-between align-items-center h4 mb-0">What’s Your
-                        Personailty Type?
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-hover-light h4 mb-0">What’s Your Personailty Type?
                         <span class="d-inline-block p-2">
                             <img src="images/icons/Personality.png" alt="">
                         </span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center h4 mb-0">Self-Esteem
-                        Test
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-hover-light h4 mb-0">Self-Esteem
                         <span class="d-inline-block p-2">
                             <img src="images/icons/Self-Esteem.png" alt="">
                         </span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center h4 mb-0">Attention Span
-                        Test
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-hover-light h4 mb-0">Attention Span
                         <span class="d-inline-block p-2">
                             <img src="images/icons/Attention.png" alt="">
                         </span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center h4 mb-0">Happiness
-                        Level
-                        Test
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-hover-light h4 mb-0">Happiness Level
                         <span class="d-inline-block p-2">
                             <img src="images/icons/Happiness.png" alt="">
                         </span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center h4 mb-0">Perfectionism
-                        Test
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-hover-light h4 mb-0">Perfectionism
                         <span class="d-inline-block p-2">
                             <img src="images/icons/Perfectionism.png" alt="">
                         </span>
@@ -306,53 +329,45 @@
             <div class="col-12 col-lg-8 d-flex flex-column flex-lg-column-reverse">
 
                 <!-- news-card-items -->
-                <div class="row my-5 my-lg-0 py-3">
-                    <div class="essay-cards d-flex">
-                        <div class="card shadow p-0 m-auto">
-                            <img src="images/phone.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title h6 fw-bold text-primary">NEWS</h5>
-                                <p class="card-text">The Growing Burden of ‘Reply ASAP’ Culture</p>
-                                <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                <div class="row my-3 my-lg-0 py-3">
+                    <ul class="slider d-flex">
+                        <li class="col p-2">
+                           <div class="card shandow">
+                               
+                               <img src="images/phone.jpg" class="card-img-top" alt="...">
+                               <div class="card-body">
+                                   <h5 class="card-title h6 fw-bold text-primary">NEWS</h5>
+                                   <p class="card-text">The Growing Burden of ‘Reply ASAP’ Culture</p>
+                                   <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                               </div>
+                           </div>
+                        </li>
+                        <li class="col p-2">
+                            <div class="card shandow">
+                                <img src="images/phone.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title h6 fw-bold text-primary">NEWS</h5>
+                                    <p class="card-text">The Growing Burden of ‘Reply ASAP’ Culture</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card shadow p-0 m-auto">
-                            <img src="images/phone.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title h6 fw-bold text-primary">NEWS</h5>
-                                <p class="card-text">The Growing Burden of ‘Reply ASAP’ Culture</p>
-                                <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                        </li>
+                        <li class="col p-2">
+                            <div class="card shandow">
+                                <img src="images/phone.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title h6 fw-bold text-primary">NEWS</h5>
+                                    <p class="card-text">The Growing Burden of ‘Reply ASAP’ Culture</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card shadow p-0 m-auto">
-                            <img src="images/phone.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title h6 fw-bold text-primary">NEWS</h5>
-                                <p class="card-text">The Growing Burden of ‘Reply ASAP’ Culture</p>
-                                <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
-                            </div>
-                        </div>
-                        <!-- <div class="card d-none d-sm-block shadow-sm p-0 m-auto">
-                            <img src="images/phone.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title h6 fw-bold text-primary">NEWS</h5>
-                                <p class="card-text">The Growing Burden of ‘Reply ASAP’ Culture</p>
-                                <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card d-none d-xxl-block shadow-sm p-0 m-auto">
-                            <img src="images/phone.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title h6 fw-bold text-primary">NEWS</h5>
-                                <p class="card-text">The Growing Burden of ‘Reply ASAP’ Culture</p>
-                                <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
-                            </div>
-                        </div> -->
-                    </div>
+                        </li>
+        
+                    </ul>
                 </div>
 
                 <!-- 綠色卡牌 -->
-                <div class="card bg-primary-variant text-dark p-5 mb-lg-4">
+                <div class="card bg-secondary text-dark p-5 mb-lg-4">
                     <h5 class="card-title fw-bold">Find a Local Therapy Today</h5>
                     <div class="card-body px-0">
                         <ul class="d-flex justify-content-between list-unstyled">
@@ -366,7 +381,7 @@
                                 </div>
 
                                 <p class="card-text">We also provide online therapy.
-                                    <a href="#" class="card-link text-secondary-variant">Another link</a>
+                                    <a href="#" class="card-link text-primary">Another link</a>
                                 </p>
                             </li>
 
@@ -382,10 +397,10 @@
         <!-- 第2欄end*************************************************   -->
 
         <!-- 第3欄*************************************************   -->
-        <main class="row mt-5 mt-lg-7">
-            <div class="card bg-primary-variant text-dark shadow p-5 mb-lg-3">
-                <h3 class="card-title fw-bold">Meet Our Team</h3>
-                <div class="card-body d-md-flex">
+        <main class="mt-5 mt-lg-7">
+            <div class="d-flex flex-column bg-p-light rounded-2 p-3 p-sm-5 mb-lg-3 text-dark shadow ">
+                <h3 class="card-title fw-bold">每日一句</h3>
+                <div class="card-body d-lg-flex">
                     <ul class="list-unstyled flex-grow-1 mb-0">
                         <li class="d-flex align-items-center my-1 m-auto py-2">
                             <div
@@ -393,8 +408,9 @@
                                 <img src="images/avatar/1.jpg" alt="" class="h-100">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title fw-bold">name</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <h4 class="card-title fw-bold">想法本身不是關鍵，採取行動讓想法成真，才是最重要的</h4>
+                                <p class="card-text">It's not about ideas. It's about making ideas happen.</p>
+                                <p class="card-text text-end">─── Scott Belsky</p>
                             </div>
                         </li>
                         <li class="d-flex align-items-center my-1 m-auto py-2">
@@ -403,8 +419,9 @@
                                 <img src="images/avatar/2.jpg" alt="" class="h-100">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title fw-bold">name</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <h4 class="card-title fw-bold">善用別人的失敗經驗，生命有限，你無法親自經歷所有錯誤</h4>
+                                <p class="card-text">Learn from the mistakes of others. You can't live long enough to make them all yourself.</p>
+                                <p class="card-text text-end">─── Eleanor Roosevelt</p>
                             </div>
                         </li>
                         <li class="d-flex align-items-center my-1 m-auto py-2">
@@ -413,8 +430,8 @@
                                 <img src="images/avatar/3.jpg" alt="" class="h-100">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title fw-bold">name</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <h4 class="card-title fw-bold">任何事應追求簡單，但這並非輕視現象的複雜程度</h4>
+                                <p class="card-text text-end">─── Albert Einstein</p>
                             </div>
                         </li>
                     </ul>
@@ -425,8 +442,9 @@
                                 <img src="images/avatar/4.jpg" alt="" class="h-100">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title fw-bold">name</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <h4 class="card-title fw-bold">挫折不是最大的失敗。真正的失敗是你從未嘗試過來源</h4>
+                                <p class="card-text">Defeat is not the worst of failures. Not to have tried is the true failure.</p>
+                                <p class="card-text text-end">─── George Woodberry</p>
                             </div>
                         </li>
                         <li class="d-flex align-item-center my-1 m-auto py-2">
@@ -435,8 +453,8 @@
                                 <img src="images/avatar/5.jpg" alt="" class="h-100">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title fw-bold">name</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <h4 class="card-title fw-bold">我荒廢了時間，時間便把我廢了。</h4>
+                                <p class="card-text text-end">─── William Shakespeare</p>
                             </div>
                         </li>
                         <li class="d-flex align-item-center my-1 m-auto py-2">
@@ -445,8 +463,9 @@
                                 <img src="images/avatar/6.jpg" alt="" class="h-100">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title fw-bold">name</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <h4 class="card-title fw-bold">事情本無好壞之分，只是緣於觀點不同來源</h4>
+                                <p class="card-text">There is nothing either good or bad, but thinking makes it so.</p>
+                                <p class="card-text text-end">─── William Shakespeare</p>
                             </div>
                         </li>
                     </ul>
@@ -462,11 +481,13 @@
 
 
     <!-- footer****************************************** -->
-    <footer class="text-white bg-primary py-5 px-4 mt-9">
+    <footer class="text-white bg-p-dark py-5 px-4 mt-9">
         <div class="container d-flex flex-column">
-            <div class="header">
-                <h2 class="fs-2 text-center">DailyPsych</h2>
-                <ul class="d-flex justify-content-center list-unstyled">
+            <nav class="d-sm-flex align-items-sm-center">
+                <h2 class="fs-2 fw-bolder text-sm-start text-center align-middle mb-sm-0">
+                    <span>DailyPsych</span>
+                </h2>
+                <ul class="d-flex justify-content-sm-start justify-content-center list-unstyled mb-sm-0 ms-sm-5">
                     <li class="p-2 m-2">
                         <a href="#"><img src="images/icons/fb-white.svg" alt=""></a>
                     </li>
@@ -477,15 +498,15 @@
                         <a href="#"><img src="images/icons/IG-white.svg" alt=""></a>
                     </li>
                 </ul>
-            </div>
+            </nav>
             <hr>
             <h3 class="text-center mt-4">Subscribe For Daily Mental Health Tip</h3>
-            <div class="input-group py-4 px-4">
+            <form class="input-group w-100 w-sm-75 w-lg-50 py-4 px-4 m-auto">
                 <input type="text" class="form-control rounded-start-3 py-3" placeholder="Enter your email"
                     aria-label="Enter your email" aria-describedby="button-addon2">
-                <button class="btn btn-danger rounded-end-3 fw-bold px-3" type="button"
+                <button class="btn btn-error rounded-end-3 fw-bold px-3" type="button"
                     id="button-addon2">SIGNUP</button>
-            </div>
+            </form>
             <hr>
             <div class="d-flex justify-content-center p-3">
                 <a href="#" class="d-block text-white text-decoration-none fw-bolder px-3">Contact</a>
@@ -496,9 +517,13 @@
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="scripts/slick.min.js"></script>
+
+    <script src="./scripts/all.js"></script>
 </body>
 
 </html>
