@@ -41,17 +41,15 @@ $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
+$orange:  #FFDCA9 !default;
+$yellow:  #FCF9BE !default;
 $green:   #198754 !default;
 $teal:    #d4e0c6 !default;
 $cyan:    #0dcaf0 !default;
-$wheat:   #eddec5; //小麥色*
 $ivory:   #b5a693; //象牙色v
-$celadon: #b9c6b0; //青瓷綠色*
 $olive:   #baba95; //橄欖綠色*
 $horizon: #d4e0c6; //蒼色
-$dark: #435856;//深綠色
+$dark:    #435856;//深綠色
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -69,8 +67,6 @@ $colors: (
   "white":      $white,
   "gray":       $gray-200,
   "gray-dark":  $gray-800,
-  "wheat":      $wheat,
-  "celadon":    $celadon,
   "olive":      $olive,
   "horizon":    $horizon, 
   "ivory":      $ivory,
@@ -78,14 +74,16 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:           $celadon !default;
-$primary-variant:   $horizon;
-$secondary:         $wheat !default;
-$secondary-variant: $ivory ;
+$primary:           #b9c6b0 !default; //青瓷綠色
+$p-light:           #ebf9e2;
+$p-dark:            #899581;
+$secondary:         #eddec5 !default;
+$s-light:           $yellow;//小麥色
+$s-dark:            #b5a693;
 $success:           $green !default;
 $info:              $olive !default;
-$warning:           $yellow !default;
-$danger:            $red !default;
+$warning:           $orange !default;
+$error:             $red !default;
 $light:             $gray-200 !default;
 $dark:              $dark !default;
 // scss-docs-end theme-color-variables
@@ -93,13 +91,15 @@ $dark:              $dark !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
-  "primary-variant": $primary-variant,
+  "p-light":    $p-light,
+  "p-dark":     $p-dark,
   "secondary":  $secondary,
-  "secondary-variant":  $secondary-variant,
+  "s-light":    $s-light,
+  "s-dark":     $s-dark,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
-  "danger":     $danger,
+  "error":      $error,
   "light":      $light,
   "dark":       $dark,
   "horizon":    $horizon, 
@@ -750,7 +750,7 @@ $table-variants: (
   "success":    shift-color($success, $table-bg-scale),
   "info":       shift-color($info, $table-bg-scale),
   "warning":    shift-color($warning, $table-bg-scale),
-  "danger":     shift-color($danger, $table-bg-scale),
+  "error":     shift-color($error, $table-bg-scale),
   "light":      $light,
   "dark":       $dark,
 ) !default;
@@ -1057,7 +1057,7 @@ $form-feedback-margin-top:          $form-text-margin-top !default;
 $form-feedback-font-size:           $form-text-font-size !default;
 $form-feedback-font-style:          $form-text-font-style !default;
 $form-feedback-valid-color:         $success !default;
-$form-feedback-invalid-color:       $danger !default;
+$form-feedback-invalid-color:       $error !default;
 
 $form-feedback-icon-valid-color:    $form-feedback-valid-color !default;
 $form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>") !default;
